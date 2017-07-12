@@ -3,6 +3,8 @@ Dynamic Web Project for private language educating centers.
 
 > Learn the languages, in the right way!
 
+![Logo banner](/WebContent/img/logo_banner.png?raw=true "Viva-School logo")
+
 The project is fully capable of delivering to a organization. If you are interested, contact us for more information.
 
 ### Contributors
