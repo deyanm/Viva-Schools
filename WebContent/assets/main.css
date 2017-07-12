@@ -1,0 +1,372 @@
+/*---Rules for the whole document style*/
+
+body {
+    background-color: #324B88;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT";
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:link,
+a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover {
+    background-color: #ff656c;
+}
+
+@media only screen and(max-width: 500px) {
+	.login-block {
+		border-radius: 20px;
+	}
+}
+
+/*---Display Viva-Logo image - login.jsp, Register.jsp, profile_.jsp*/
+
+.viva-logo {
+    width: 80%;
+    height: 80%;
+    margin: 0 0 30px 0;
+    position: relative;
+    overflow: auto;
+    display: block;
+    margin-left: 8%;
+    margin-right: auto;
+}
+
+
+/*-- The style for - login.jsp, Register.jsp, profile_.jsp*/
+
+.login-block {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #f44336;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 700px;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Gill Sans", "Gill Sans MT";
+    padding: 0 20px 0 10px;
+    outline: none;
+}
+
+/* Styling for the choose image to upload */
+label {
+   cursor: pointer;
+   margin-bottom: 10px;
+   display: inline-block;
+   padding: 5px;
+   background: #324B88;
+   color: #ff656c;
+   border-radius: 5px;
+   text-align:center;
+}
+
+#upload-photo {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+/*--- The style for the profile page - profile_.jsp*/
+.profile input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #f66055;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT";
+    padding: 0 20px 0 10px;
+    cursor: pointer;
+}
+
+.profile input:hover {
+    background: #ff656c;
+}
+
+h1.profile {
+    font-size: 26px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #ff656c;
+    text-align: center;
+}
+
+h3.profile{
+    display: inline;
+    color: #ff656c;
+    padding: 0 10px 0 10px;
+}
+
+/* The styling for the green dot */
+.profile img {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.login-block input:active,
+.login-block input:focus {
+    border: 1px solid #f44336;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #f44336;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Gill Sans", "Gill Sans MT";
+    cursor: pointer;
+}
+
+.login-block button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.login-block button:hover {
+    background: #ff656c;
+}
+
+
+/*--- The successful login style page - userSigned.jsp*/
+
+.success h1 {
+    font-size: 26px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #ff656c;
+    text-align: center;
+}
+
+/*--- The successful login style page - userRegistered.jsp*/
+
+.success p {
+    font-size: 24px;
+    color: antiquewhite;
+}
+
+.success a {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+/*--- The footer design ---*/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background: #596789; 
+ 
+}
+
+/* --------------------------------- THE LANGUAGE CHOOSE DESIGN ------------------------------- */
+#buttons {
+    width: 1045px;
+    overflow: hidden;
+    margin: 70px auto 0;
+}
+
+.button {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+    background: #aa2e25;
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: inset 0 1px 0px #fdfdfd;
+    padding: 15px 5px 5px;
+    box-sizing: border-box;
+}
+
+.button i {
+    background: #4479BA;
+    color: #eaeaea;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.social-container {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #656565;
+    line-height: 54px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    background: #d8d8d8;
+    width: 100%;
+    height: 45px;
+    box-shadow: inset 0 -2px 4px #c7c7c7;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide, .button i {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.slide {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 22px 22px;
+    -o-border-radius: 0 0 22px 22px;
+    -ms-border-radius: 0 0 22px 22px;
+    -moz-border-radius: 0 0 22px 22px;
+    -webkit-border-radius: 0 0 22px 22px;
+ /* top fix */
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    top: -35px;
+}
+
+.slide::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    box-shadow: inset 0 1px 0px #fdfdfd, 0 3px 0px #cdcdcd;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #eaeaea;
+    border: 1px solid #cbcbcb;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+.button:hover .slide {
+    top: 0;
+    border-radius: 3px;
+}
+
+.button.facebook:hover i, .facebook .slide {
+    background: #305c99;
+    color: white;
+    align="center"
+}
+
+.button.twitter:hover i, .twitter .slide {
+    background: #00cdff;
+    color: white;
+}
+
+.lang-button {
+  display: block;
+  background: none;
+  margin: auto;
+  margin-top:  5px;
+  outline: none;
+  color: #000000;
+   cursor: pointer;
+  box-sizing: border-box;
+    font-size: 18px;
+  border: none;
+}
+
+.flag {
+  margin-left: 70px;
+  margin-top: 2px;  
+  height: 50px;
+  border-top-left-radius: 90% 70%;
+  border-top-right-radius: 90% 70%;
+  border-bottom-right-radius: 90% 70%;
+  border-bottom-left-radius: 90% 70%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.button.google:hover i, .google .slide {
+    background: #d24228;
+    color: white;
+}
+
+.button.linkedin:hover i, .linkedin .slide {
+    background: #007bb6;
+    color: white;
+}
+
+.button.linkedin {
+    margin-right: 10px;
+}
